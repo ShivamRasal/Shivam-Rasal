@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0e4d7;
+  color: #4d4d4d;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header Styles */
+header {
+  background-color: #b89b7b;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  animation: fadeIn 1s;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul li a {
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f1a640;
+}
+
+/* About Section */
+#about {
+  padding: 100px 20px;
+  background-color: #87CEEB;
+  text-align: center;
+  animation: slideUp 1.5s ease-in-out;
+}
+
+#about h1 {
+  color: #fff;
+}
+
+#about p {
+  color: #333;
+}
+
+/* Skills Section */
+#skills {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #add8e6;
+}
+
+#skills h2 {
+  margin-bottom: 30px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.skill-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #b0c4de;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}
+
+/* Projects Section */
+#projects {
+  padding: 60px 20px;
+  background-color: #ffebcd;
+  text-align: center;
+}
+
+#projects h2 {
+  margin-bottom: 30px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #d1b68d;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact {
+  padding: 60px 20px;
+  background-color: #fffacd;
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 30px;
+}
+
+#contact a {
+  color: #4d4d4d;
+  transition: color 0.3s;
+}
+
+#contact a:hover {
+  color: #b89b7b;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #87CEEB;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+}
+
+footer a {
+  margin: 0 10px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #f1a640;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
